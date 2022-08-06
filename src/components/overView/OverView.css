@@ -1,0 +1,9 @@
+.over-view-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.over-view-header-title {
+  color: #6236FF;
+}

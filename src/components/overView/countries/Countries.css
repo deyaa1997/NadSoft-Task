@@ -1,0 +1,125 @@
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 20px;
+  flex-direction: row;
+  gap: 50px;
+  position: relative;
+}
+
+.countries-container-left {
+  flex: 3;
+  padding: 10px 0px 0px 0px;
+  position: relative;
+  min-height: 550px;
+  max-height: 790px;
+}
+
+.show-button {
+  height: 28px;
+  position: absolute;
+  top: 4px;
+  cursor: pointer;
+  border: solid 1px;
+  color: #6236ff;
+  background-color: white;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+}
+
+.hide {
+  display: none;
+  transition: all 10s 10s ease-in-out;
+}
+
+.countries-container-right {
+  flex: 10;
+}
+
+
+@media screen and (max-width: 773px) {
+  .global-data-container {
+    justify-content: center;
+  }
+}
+
+.box {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.country-list {
+  position: relative;
+  height: 100%;
+}
+
+.country-navbar {
+  position: absolute;
+  list-style-type: none;
+  padding: 0px;
+  height: 95%;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.country {
+  cursor: pointer;
+  display: block;
+  color: #000000a3;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.country-search {
+  height: 25px;
+  width: 150px;
+  border: 1px solid #999;
+  font-size: 14px;
+  padding: 0px 4px;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 0px 4px #ccc;
+}
+
+select {
+  height: 25px;
+  border: 1px solid #999;
+  font-size: 14px;
+  text-align: center;
+  color: #6236ff;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 0px 4px #ccc;
+}
+
+.country-list-header {
+  margin: 8px 3px !important;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 8px;
+}
+
+.active-country {
+  border: solid 1px;
+  color: #6236ff;
+}
+
+.country:hover:not(.active-country) {
+  color: #6236ff;
+}
