@@ -12,7 +12,6 @@ function OverView() {
       let summary = await getSummary();
       setGlobalData(summary.Global);
       setCountriesData(summary.Countries);
-      console.log(summary);
     } catch (error) {
       console.log("error when fetching data");
     }
